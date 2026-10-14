@@ -273,3 +273,14 @@ nav.main a[aria-current="page"]{color:var(--red)}
 @media (max-width:700px){.stories.two{grid-template-columns:minmax(0,1fr)}}
 .stories>*{min-width:0}
 .article-head h1{overflow-wrap:anywhere}
+.ph{display:block;width:100%;height:auto;object-fit:cover;border-radius:2px;background:var(--field)}
+.strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,1.6vw,20px);margin-top:clamp(36px,5vw,64px)}
+.strip .ph{aspect-ratio:3/4}
+@media (max-width:560px){.strip{grid-template-columns:repeat(2,minmax(0,1fr))}.strip .ph:first-child{grid-column:1/-1;aspect-ratio:16/10}}
+.spec .ph{margin-bottom:2px}
+.pillar .ph{margin-bottom:6px}
+.gal{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(8px,1.6vw,20px)}
+.gal .strip{margin-top:0}
+.g2{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);grid-template-rows:1fr;gap:clamp(8px,1.6vw,20px);aspect-ratio:3/1}
+.g2 .ph{height:100%}
+@media (max-width:560px){.g2{aspect-ratio:2/1}}
