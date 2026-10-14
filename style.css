@@ -284,3 +284,22 @@ nav.main a[aria-current="page"]{color:var(--red)}
 .g2{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);grid-template-rows:1fr;gap:clamp(8px,1.6vw,20px);aspect-ratio:3/1}
 .g2 .ph{height:100%}
 @media (max-width:560px){.g2{aspect-ratio:2/1}}
+
+/* ---- sections added Oct 2026 ---- */
+.listen .soon,.listen-block .soon{margin:0;flex:none}
+.sound-note{display:grid;gap:10px;color:var(--on-dark-soft);font-size:15px}
+.sound-note .label{color:var(--mustard)}
+.kinds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:clamp(28px,4vw,48px)}
+.kind{display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:170px;padding:20px;border-radius:2px;background:var(--tone);color:var(--on-dark)}
+.kind h3{font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:clamp(30px,3.2vw,42px);line-height:.95}
+.kind .label{opacity:.8;font-size:11px}
+@media (max-width:700px){.kinds{grid-template-columns:minmax(0,1fr)}.kind{min-height:130px}}
+.art-note{margin-top:12px;background:var(--field);border-radius:2px;padding:clamp(24px,4vw,40px);display:grid;gap:14px;justify-items:start}
+.art-note .label{color:var(--red)}
+.art-note p:not(.label){max-width:36em;color:var(--ink-soft)}
+.art-note .actions{margin:0}
+.policies{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+.policies .pillar a{color:var(--red);font-weight:600}
+@media (max-width:700px){.policies{grid-template-columns:minmax(0,1fr)}}
+.sig-grid .listen{margin-top:28px}
+.sig-grid .sound-note{margin-top:22px}
